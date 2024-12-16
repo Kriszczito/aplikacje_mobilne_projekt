@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ZDROWA APKA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'/>
+
+  
+
+
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+       <!--<img class="logo_graf" src="logo.png">  logo jesli jest sens dawac-->
+      <div class="logo"><a href="#">Healthy Challenge </a></div>
+       
+      </div>
+    </nav>
+  </div>
+ 
+  
+    <div class="dummy-text-login">
+
+
+      <div class="container-login">
+        <h1>Zaloguj się</h1>
+        <br>
+        
+        <form id="loginForm" method="post">
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Wpisz login">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Wpisz hasło">
+                <div class="underline"></div>
+            </div>
+    
+            <input type="submit" value="Zaloguj">
+        </form>
+    </div>
+    
+    <script>
+      // Dodajemy event listener na formularz
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+          event.preventDefault();  // Zapobiegamy domyślnej akcji formularza (wysyłanie na serwer)
+  
+          // Pobieramy dane z formularza
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+  
+          // Sprawdzanie poprawności danych
+          if (username === 'adam' && password === 'admin') {
+              // Jeśli dane są poprawne, przekierowujemy do strony "indeks.html"
+              window.location.href = 'indeks.html';
+          } else {
+              // Jeśli dane są niepoprawne, pokazujemy alert
+              alert('Niepoprawny login lub hasło.');
+          }
+      });
+  </script>
+    
+    
+
+
+
+  </div>
+ 
+</body>
+</html>
