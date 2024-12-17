@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ZDROWA APKA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'/>
+
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+       <!--<img class="logo_graf" src="logo.png">  logo jesli jest sens-->
+      <div class="logo"><a href="#">Healthy Challenge </a></div>
+        <ul class="links">
+          <li><a href="/main.html">Strona Głowna</a></li>
+          <li><a href="#">O Projekcie</a></li>
+          <li>
+            <a href="#" class="desktop-link">Podopieczni</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Podopieczni</label>
+            <ul>
+              <li><a href="#">Dodaj podopiecznego</a></li>
+              <li><a href="#">Lista podopiecznych</a></li>
+              <li><a href="#">Ranking podopiecznych</a></li>
+              
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Zajęcia</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Zajęcia</label>
+            <ul>
+              <li><a href="#">Dodaj kategorie</a></li>
+              <li><a href="#">Lista Zajęć</a></li>
+              <li><a href="#">Zawody</a></li>
+            
+            </ul>
+          </li>
+          <li><a href="main.html">Wyloguj</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+ 
+   <div class="dummy-text">
+    <h1 class="add_user_form"><i>Dodawanie użytkownika</i></h1>
+    <div class="form-box">
+    <form class="useradd_form" method="post" id="add-new-user">
+        <input type="text" placeholder="  podaj imie ">
+        <input type="text" placeholder="  podaj nazwisko">
+               
+       
+        
+        <select>
+            <option>Trening obwodowy</option>
+            <option>Trening funkcjonalny</option>
+            <option>Bieganie</option>
+            <option>Jazda na rowerze</option>
+            <option>Koszykówka</option>
+            <option>wspinaczka</option>
+             
+        </select>
+
+        <button type="submit">Dodaj podpoiecznego</button>
+
+        
+
+
+    </form>
+
+</div>
+
+
+
+  </div>
+ 
+</body>
+</html>
